@@ -23,7 +23,7 @@
             console.log("a ist 1")
         }
 
-        let b = 2;
+        let b = 1;
         if ( a == 1 && b == 2 ) {
             console.log( "a ist 2 und b ist 2" );
         }
@@ -41,11 +41,15 @@
         if ( a > 0 ) {
             console.log( "a ist größer 0" );
         }
-
+        let benutzer = prompt("Bitte geben Sie den Benutzernamen ein:");
         let password = prompt( "Bitte geben Sie das Passwort ein:" );
-        if ( password == "geheim" ) {
+        if ( password == "geheim" && benutzer == "Robert") {
             document.body.innerHTML="";
             document.write( "Dieser Text hier ist geheim.");
+        }   else
+        {   
+            document.body.innerHTML = "";
+            document.write("Dieser Text hier ist nicht geheim.");
         }
     </script>
 </body>
